@@ -1,0 +1,16 @@
+<link rel="import" href="../polymer/polymer.html" />
+<link rel="import" href="../paper-input/paper-input.html" />
+<dom-module id="xenon-input">
+    <template>
+      <paper-input value={{value}} label={{label}}></paper-input>
+    </template>
+    <script>
+        Polymer({
+            is: "xenon-input",
+            properties: {
+                value: { type: String, notfiy: true },
+                label: { type: String, notfiy: true },
+            },
+        })
+    </script>
+</dom-module>
